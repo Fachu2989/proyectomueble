@@ -28,33 +28,47 @@
     </div>
 
     <main class="contenido-principal contenedor">
-        <h2 class="text-center">Cotizador de Envios a todo Bs As</h2>
-    </main>
-    <header>
-        <form class="formulario">
-            <fieldset>
-                </div>
-                <div class="campo">
-                    <label for="nombre">Ingrese el Monto del Envio:</label>
-                    <input id="envio" type="number">
-                </div>
-                <div class="campo">
-                    <label for="ciudades">Direccion</label>
-                    <select id="ciudades" required>
-                        <option disabled  selected  >--Seleccione--</option>
-                        <option>Zona Sur=50%</option>
-                        <option>Zona Norte=80%</option>
-                        <option>Zona Oeste=100%</option>
-                        <option>Zona CABA=20%</option>
-                    </select>
-                </div>
-               
-                <input class="btn" type="submit" value="Enviar Monto">
-        </form>
+        <h2 class="text-center">Crear Nuevo Blog</h2>
+    
+            <form id="formulario" class="formulario">
+                <fieldset>
+                    <legend>Nuevo Blog</legend>
+                    
+                    <div class="campo">
+                        <label for="nombre">Nombre del Blog:</label >
+                        <input id="nombre" type="text" placeholder="Nombre del Blog" >
+                    </div>
 
-        
-    </header>
-    <script src="../assets/js/cotizador.js"></script>
+                    <div class="campo">
+                        <label for="creador">Nombre Apellido:</label >
+                        <input id="creador" type="text" placeholder="Creador del Blog"required >
+                    </div>
+    
+                    <div class="campo">
+                        <label for="date">Fecha:</label>
+                        <input id="fecha" type="date" placeholder="Fecha" required>
+                    </div>
+                    
+    
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" cols="19" rows="10"></textarea required>
+                    </div>
+                </fieldset>
+    
+                <input class="btn" type="submit" value="Enviar Blog">
+    
+            </form>
+            <section class="contenedor-blog">
+                <div id="blog" class="entrada blog">
+                    
+                    
+                </div>
+            </section>
+                
+        <script src="/assets/js/blog.js"></script>
+    </main>
+    
 
     <footer class="site-footer">
         <div class="grid-footer contenedor">
